@@ -30,6 +30,13 @@ jobs:
     - name: Install dependencies
       run: bun install
       
+    - name: Compile TypeScript config
+      run: |
+        echo "Compiling .storybook/main.ts to main.js..."
+        bunx tsc .storybook/main.ts --outDir .storybook --target es2020 --module commonjs --allowJs --esModuleInterop
+        echo "Storybook config files:"
+        ls -la .storybook/
+        
     - name: Build Storybook
       run: bun run build-storybook
       
