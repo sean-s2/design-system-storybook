@@ -33,7 +33,7 @@ jobs:
     - name: Compile TypeScript config
       run: |
         echo "Compiling .storybook/main.ts to main.js..."
-        bunx tsc .storybook/main.ts --outDir .storybook --target es2020 --module commonjs --allowJs --esModuleInterop
+        bunx tsc .storybook/main.ts --outDir .storybook --target es2020 --module commonjs --allowJs --esModuleInterop --jsx react-jsx --lib dom,dom.iterable,es6 --skipLibCheck
         echo "Storybook config files:"
         ls -la .storybook/
         
