@@ -30,10 +30,30 @@ jobs:
     - name: Install dependencies
       run: bun install
       
-    - name: Compile TypeScript config
+    - name: Setup Storybook config
       run: |
-        echo "Compiling .storybook/main.ts to main.js..."
-        bunx tsc .storybook/main.ts --outDir .storybook --target es2020 --module commonjs --allowJs --esModuleInterop --jsx react-jsx --lib dom,dom.iterable,es6 --skipLibCheck
+        echo "Setting up Storybook configuration..."
+        mv .storybook/main.ts .storybook/main.ts.backup
+        cat > .storybook/main.js << 'EOF'
+        module.exports = {
+          stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+          addons: [
+            "@storybook/addon-links",
+            "@storybook/addon-essentials",
+            "@storybook/addon-interactions",
+          ],
+          framework: {
+            name: "@storybook/react-vite",
+            options: {},
+          },
+          docs: {
+            autodocs: true,
+          },
+          core: {
+            disableTelemetry: true,
+          },
+        };
+        EOF
         echo "Storybook config files:"
         ls -la .storybook/
         
