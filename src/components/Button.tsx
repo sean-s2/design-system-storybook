@@ -43,7 +43,8 @@ export const Button: React.FC<ButtonProps> = ({
       padding: spacing.button[size].padding,
       fontSize: typography.button[size].fontSize,
       lineHeight: typography.button[size].lineHeight,
-      position: 'relative' as const
+      position: 'relative' as const,
+      whiteSpace: 'nowrap' as const
     };
 
     if (disabled) {
