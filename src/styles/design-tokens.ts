@@ -85,19 +85,19 @@ export const spacing = {
     sm: { 
       padding: '8px 16px', 
       gap: '8px',
-      width: '137px',
+      width: 'auto',
       height: '36px'
     },
     md: { 
       padding: '10px 20px', 
       gap: '8px',
-      width: '141px',
+      width: 'auto',
       height: '40px'
     },
     lg: { 
       padding: '12px 24px', 
       gap: '8px',
-      width: '159px',
+      width: 'auto',
       height: '44px'
     },
     xl: { 
