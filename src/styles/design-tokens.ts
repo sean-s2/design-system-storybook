@@ -103,7 +103,7 @@ export const spacing = {
     xl: { 
       padding: '12px 18px', 
       gap: '6px',
-      width: '163px',
+      width: 'auto',
       height: '48px'
     }
   },
