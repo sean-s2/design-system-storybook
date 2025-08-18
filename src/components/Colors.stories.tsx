@@ -53,16 +53,31 @@ const ColorSwatch = ({ name, value, figmaVar, usage }: {
       flexShrink: 0
     }} />
     <div style={{ flex: 1 }}>
-      <div style={{ fontWeight: 600, fontSize: '14px', color: '#1e293b' }}>
+      <div style={{ 
+        fontWeight: 600, 
+        fontSize: '14px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>
         {name}
       </div>
       <div style={{ fontSize: '12px', color: '#64748b', fontFamily: 'monospace' }}>
         {value}
       </div>
-      <div style={{ fontSize: '11px', color: '#94a3b8', marginTop: '2px' }}>
+      <div style={{ 
+        fontSize: '11px', 
+        color: '#94a3b8', 
+        marginTop: '2px',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>
         Figma: {figmaVar}
       </div>
-      <div style={{ fontSize: '11px', color: '#64748b', marginTop: '2px' }}>
+      <div style={{ 
+        fontSize: '11px', 
+        color: '#64748b', 
+        marginTop: '2px',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>
         {usage}
       </div>
     </div>
@@ -73,7 +88,11 @@ export const PrimaryColors: Story = {
   name: 'Primary Colors',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Primary Button Colors</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Primary Button Colors</h3>
       <ColorSwatch 
         name="Primary Default" 
         value={colors.primary.default}
@@ -113,7 +132,11 @@ export const SecondaryColors: Story = {
   name: 'Secondary Colors',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Secondary Button Colors</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Secondary Button Colors</h3>
       <ColorSwatch 
         name="Secondary Default" 
         value={colors.secondary.default}
@@ -153,7 +176,11 @@ export const TertiaryColors: Story = {
   name: 'Tertiary Colors',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Tertiary Button Colors</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Tertiary Button Colors</h3>
       <ColorSwatch 
         name="Tertiary Default" 
         value={colors.tertiary.default}
@@ -193,7 +220,11 @@ export const DisabledColors: Story = {
   name: 'Disabled States',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Disabled Button Colors</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Disabled Button Colors</h3>
       <ColorSwatch 
         name="Disabled Text" 
         value={colors.disabled.text}
@@ -227,7 +258,11 @@ export const NeutralGrays: Story = {
   name: 'Neutral Gray Scale',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Neutral Gray Scale</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Neutral Gray Scale</h3>
       {Object.entries(colors.neutral.gray).map(([key, value]) => (
         <ColorSwatch 
           key={key}
@@ -252,7 +287,11 @@ export const LoadingColors: Story = {
   name: 'Loading Spinner Colors',
   render: () => (
     <div>
-      <h3 style={{ marginBottom: '16px', color: '#1e293b' }}>Loading Spinner Colors</h3>
+      <h3 style={{ 
+        marginBottom: '16px', 
+        color: '#1e293b',
+        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      }}>Loading Spinner Colors</h3>
       <ColorSwatch 
         name="Primary Loading" 
         value={colors.loading.primary}
