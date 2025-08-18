@@ -107,20 +107,7 @@ export const ExtraLarge: Story = {
   }
 };
 
-export const Disabled: Story = {
-  args: {
-    label: 'Disabled Link',
-    variant: 'link',
-    disabled: true,
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: 'Link button in disabled state that prevents user interaction.'
-      }
-    }
-  }
-};
+
 
 export const Loading: Story = {
   args: {

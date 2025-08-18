@@ -107,20 +107,7 @@ export const ExtraLarge: Story = {
   }
 };
 
-export const Disabled: Story = {
-  args: {
-    label: 'Disabled Secondary',
-    variant: 'secondary',
-    disabled: true,
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: 'Secondary button in disabled state that prevents user interaction.'
-      }
-    }
-  }
-};
+
 
 export const Loading: Story = {
   args: {

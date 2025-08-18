@@ -107,20 +107,7 @@ export const ExtraLarge: Story = {
   }
 };
 
-export const Disabled: Story = {
-  args: {
-    label: 'Disabled Tertiary',
-    variant: 'tertiary',
-    disabled: true,
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: 'Tertiary button in disabled state that prevents user interaction.'
-      }
-    }
-  }
-};
+
 
 export const Loading: Story = {
   args: {

@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "TalkToFigma": {
+      "command": "bunx",
+      "args": [
+        "cursor-talk-to-figma-mcp@latest"
+      ]
+    },
+    "Figma": {
+      "command": "bunx",
+      "args": [
+        "cursor-talk-to-figma-mcp@latest"
+      ],
+      "env": {
+        "FIGMA_CHANNEL": "4l7peov3"
+      }
+    },
+    "Storybook": {
+      "command": "bun",
+      "args": ["run", "src/storybook_mcp/server.ts"],
+      "env": {
+        "STORYBOOK_URL": "http://localhost:6006"
+      }
+    }
+  }
+}

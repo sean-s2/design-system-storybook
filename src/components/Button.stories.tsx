@@ -21,14 +21,19 @@ Explore each variant in detail using the nested sections in the sidebar:
 - **Ghost** - Minimal styling with transparent background
 - **Link** - Text-based actions that look like hyperlinks
 
+## States & Modifiers
+- **Disabled** - All variants and sizes in disabled state
+- **Loading** - Available within each variant section
+- **Full Width** - Available within each variant section
+
 ## Features
 - Multiple sizes (sm, md, lg, xl)
 - Loading states with custom text
-- Disabled states
+- Comprehensive disabled states
 - Full width option
 - Comprehensive accessibility support
 
-Use the individual variant sections for detailed examples and documentation.
+Use the individual variant and state sections for detailed examples and documentation.
         `,
       },
     },
