@@ -58,7 +58,7 @@ export const PrimarySmallHover: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Primary button in small size (36px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white text, subtle elevation, and micro-animation on hover.'
+        story: 'Primary button in small size (36px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover) and white text on hover.'
       }
     },
     // Force hover state for demonstration
@@ -70,8 +70,6 @@ export const PrimarySmallHover: Story = {
         {...args} 
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <div style={{ 
@@ -96,7 +94,7 @@ export const PrimaryMediumHover: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Primary button in medium size (40px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white text, subtle elevation, and micro-animation on hover.'
+        story: 'Primary button in medium size (40px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover) and white text on hover.'
       }
     },
     pseudo: { hover: true }
@@ -107,8 +105,6 @@ export const PrimaryMediumHover: Story = {
         {...args} 
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <div style={{ 
@@ -133,7 +129,7 @@ export const PrimaryLargeHover: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Primary button in large size (44px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white text, subtle elevation, and micro-animation on hover.'
+        story: 'Primary button in large size (44px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover) and white text on hover.'
       }
     },
     pseudo: { hover: true }
@@ -144,8 +140,6 @@ export const PrimaryLargeHover: Story = {
         {...args} 
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <div style={{ 
@@ -170,7 +164,7 @@ export const PrimaryExtraLargeHover: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Primary button in extra large size (48px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white text, subtle elevation, and micro-animation on hover.'
+        story: 'Primary button in extra large size (48px height) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover) and white text on hover.'
       }
     },
     pseudo: { hover: true }
@@ -181,8 +175,6 @@ export const PrimaryExtraLargeHover: Story = {
         {...args} 
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <div style={{ 
@@ -232,7 +224,7 @@ export const PrimaryHoverComparison: Story = {
     layout: 'padded',
     docs: {
       description: {
-        story: 'Side-by-side comparison of Primary button default and hover states, showing the color change from Primary Blue 500 (colors.primary.default) to Primary Blue 600 (colors.primary.hover) and the subtle elevation effect.'
+        story: 'Side-by-side comparison of Primary button default and hover states, showing the color change from Primary Blue 500 (colors.primary.default) to Primary Blue 600 (colors.primary.hover).'
       }
     }
   }
@@ -248,8 +240,6 @@ export const AllSizesHover: Story = {
         size="sm"
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <Button 
@@ -258,8 +248,6 @@ export const AllSizesHover: Story = {
         size="md"
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <Button 
@@ -268,8 +256,6 @@ export const AllSizesHover: Story = {
         size="lg"
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
       <Button 
@@ -278,8 +264,6 @@ export const AllSizesHover: Story = {
         size="xl"
         style={{
           backgroundColor: colors.primary.hover, // Primary Blue 600 from Figma
-          transform: 'translateY(-1px)',
-          boxShadow: shadows.lg,
         }}
       />
     </div>

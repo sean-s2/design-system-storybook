@@ -81,26 +81,18 @@ export const Button: React.FC<ButtonProps> = ({
 
     // Determine current state styles
     let currentBackgroundColor = variantColors.default;
-    let currentTransform = 'translateY(0)';
-    let currentBoxShadow = 'none';
 
     if (isActive && !disabled && !loading) {
-      currentTransform = 'translateY(0)';
-      currentBoxShadow = shadows.md;
       currentBackgroundColor = variantColors.hover; // Use hover color for active state
     } else if (isHovered && !disabled && !loading) {
       currentBackgroundColor = variantColors.hover;
-      currentTransform = 'translateY(-1px)';
-      currentBoxShadow = shadows.lg;
     }
 
     return {
       ...baseStyles,
       backgroundColor: currentBackgroundColor,
       color: variantColors.text,
-      borderColor: variantColors.border,
-      transform: currentTransform,
-      boxShadow: currentBoxShadow
+      borderColor: variantColors.border
     };
   };
 

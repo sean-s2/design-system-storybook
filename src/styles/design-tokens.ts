@@ -179,9 +179,7 @@ export const buttonVariants = {
     color: colors.primary.text,
     borderColor: colors.primary.border,
     hover: {
-      backgroundColor: colors.primary.hover,
-      transform: 'translateY(-1px)',
-      boxShadow: shadows.lg
+      backgroundColor: colors.primary.hover
     }
   },
   secondary: {
@@ -189,9 +187,7 @@ export const buttonVariants = {
     color: colors.secondary.text,
     borderColor: colors.secondary.border,
     hover: {
-      backgroundColor: colors.secondary.hover,
-      transform: 'translateY(-1px)',
-      boxShadow: shadows.lg
+      backgroundColor: colors.secondary.hover
     }
   },
   tertiary: {
@@ -199,9 +195,7 @@ export const buttonVariants = {
     color: colors.tertiary.text,
     borderColor: colors.tertiary.border,
     hover: {
-      backgroundColor: colors.tertiary.hover,
-      transform: 'translateY(-1px)',
-      boxShadow: shadows.lg
+      backgroundColor: colors.tertiary.hover
     }
   },
   ghost: {
@@ -209,9 +203,7 @@ export const buttonVariants = {
     color: colors.ghost.text,
     borderColor: colors.ghost.border,
     hover: {
-      backgroundColor: colors.ghost.hover,
-      transform: 'translateY(-1px)',
-      boxShadow: shadows.lg
+      backgroundColor: colors.ghost.hover
     }
   },
   link: {
@@ -219,9 +211,7 @@ export const buttonVariants = {
     color: colors.link.text,
     borderColor: colors.link.border,
     hover: {
-      backgroundColor: colors.link.hover,
-      transform: 'none',
-      boxShadow: 'none'
+      backgroundColor: colors.link.hover
     }
   }
 };
