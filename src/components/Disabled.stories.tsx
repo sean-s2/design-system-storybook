@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import { colors } from '../styles/design-tokens';
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button/Disabled',
@@ -206,7 +207,7 @@ export const TertiarySmall: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in small size (36px height), disabled state. Features transparent background, 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 14px font.'
+        story: 'Tertiary button in small size (36px height), disabled state. Features transparent background, 8px corner radius, Neutral Gray 300 (colors.disabled.text) text/icon color, and DM Sans SemiBold 14px font.'
       }
     }
   }
@@ -223,7 +224,7 @@ export const TertiaryMedium: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in medium size (40px height), disabled state. Features transparent background, 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 14px font.'
+        story: 'Tertiary button in medium size (40px height), disabled state. Features transparent background, 8px corner radius, Neutral Gray 300 (colors.disabled.text) text/icon color, and DM Sans SemiBold 14px font.'
       }
     }
   }
@@ -240,7 +241,7 @@ export const TertiaryLarge: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in large size (44px height), disabled state. Features transparent background, 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 16px font.'
+        story: 'Tertiary button in large size (44px height), disabled state. Features transparent background, 8px corner radius, Neutral Gray 300 (colors.disabled.text) text/icon color, and DM Sans SemiBold 16px font.'
       }
     }
   }
@@ -257,7 +258,7 @@ export const TertiaryExtraLarge: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in extra large size (48px height), disabled state. Features transparent background, 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 16px font.'
+        story: 'Tertiary button in extra large size (48px height), disabled state. Features transparent background, 8px corner radius, Neutral Gray 300 (colors.disabled.text) text/icon color, and DM Sans SemiBold 16px font.'
       }
     }
   }

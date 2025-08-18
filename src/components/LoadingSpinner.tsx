@@ -1,4 +1,5 @@
 import React from 'react';
+import { colors } from '../styles/design-tokens';
 
 export interface LoadingSpinnerProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -8,7 +9,7 @@ export interface LoadingSpinnerProps {
 
 export const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
   size = 'md',
-  color = '#d1e9ff',
+  color = colors.loading.primary, // Primary Blue 100 from Figma
   className = ''
 }) => {
   const sizeMap = {
