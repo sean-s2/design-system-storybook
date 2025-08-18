@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { colors, spacing, typography, borderRadius, shadows, transitions } from '../styles/design-tokens';
 import { LoadingSpinner } from './LoadingSpinner';
 
@@ -12,6 +12,7 @@ export interface ButtonProps {
   loadingText?: string;
   fullWidth?: boolean;
   children?: React.ReactNode;
+  style?: React.CSSProperties;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -24,8 +25,11 @@ export const Button: React.FC<ButtonProps> = ({
   loadingText = 'Submitting...',
   fullWidth = false,
   children,
+  style,
   ...props
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const getButtonStyles = () => {
     const baseStyles = {
       fontFamily: typography.fontFamily.primary,
@@ -75,20 +79,28 @@ export const Button: React.FC<ButtonProps> = ({
       };
     }
 
+    // Determine current state styles
+    let currentBackgroundColor = variantColors.default;
+    let currentTransform = 'translateY(0)';
+    let currentBoxShadow = 'none';
+
+    if (isActive && !disabled && !loading) {
+      currentTransform = 'translateY(0)';
+      currentBoxShadow = shadows.md;
+      currentBackgroundColor = variantColors.hover; // Use hover color for active state
+    } else if (isHovered && !disabled && !loading) {
+      currentBackgroundColor = variantColors.hover;
+      currentTransform = 'translateY(-1px)';
+      currentBoxShadow = shadows.lg;
+    }
+
     return {
       ...baseStyles,
-      backgroundColor: variantColors.default,
+      backgroundColor: currentBackgroundColor,
       color: variantColors.text,
       borderColor: variantColors.border,
-      '&:hover': {
-        backgroundColor: variantColors.hover,
-        transform: 'translateY(-1px)',
-        boxShadow: shadows.lg
-      },
-      '&:active': {
-        transform: 'translateY(0)',
-        boxShadow: shadows.md
-      }
+      transform: currentTransform,
+      boxShadow: currentBoxShadow
     };
   };
 
@@ -114,9 +126,13 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      style={buttonStyles}
+      style={{ ...buttonStyles, ...style }}
       onClick={onClick}
       disabled={isDisabled}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onMouseDown={() => setIsActive(true)}
+      onMouseUp={() => setIsActive(false)}
       {...props}
     >
       {loading && (
