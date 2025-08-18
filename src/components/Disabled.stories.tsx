@@ -198,7 +198,7 @@ export const SecondaryExtraLarge: Story = {
 export const TertiarySmall: Story = {
   name: 'Tertiary - Small',
   args: {
-    label: 'Disabled Tertiary',
+    label: 'Button CTA',
     variant: 'tertiary',
     size: 'sm',
     disabled: true,
@@ -206,7 +206,7 @@ export const TertiarySmall: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in small size, disabled state.'
+        story: 'Tertiary button in small size (36px height), disabled state. Features 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 14px font.'
       }
     }
   }
@@ -215,7 +215,7 @@ export const TertiarySmall: Story = {
 export const TertiaryMedium: Story = {
   name: 'Tertiary - Medium',
   args: {
-    label: 'Disabled Tertiary',
+    label: 'Button CTA',
     variant: 'tertiary',
     size: 'md',
     disabled: true,
@@ -223,7 +223,7 @@ export const TertiaryMedium: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in medium size, disabled state.'
+        story: 'Tertiary button in medium size (40px height), disabled state. Features 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 14px font.'
       }
     }
   }
@@ -232,7 +232,7 @@ export const TertiaryMedium: Story = {
 export const TertiaryLarge: Story = {
   name: 'Tertiary - Large',
   args: {
-    label: 'Disabled Tertiary',
+    label: 'Button CTA',
     variant: 'tertiary',
     size: 'lg',
     disabled: true,
@@ -240,7 +240,7 @@ export const TertiaryLarge: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in large size, disabled state.'
+        story: 'Tertiary button in large size (44px height), disabled state. Features 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 16px font.'
       }
     }
   }
@@ -249,7 +249,7 @@ export const TertiaryLarge: Story = {
 export const TertiaryExtraLarge: Story = {
   name: 'Tertiary - Extra Large',
   args: {
-    label: 'Disabled Tertiary',
+    label: 'Button CTA',
     variant: 'tertiary',
     size: 'xl',
     disabled: true,
@@ -257,7 +257,7 @@ export const TertiaryExtraLarge: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Tertiary button in extra large size, disabled state.'
+        story: 'Tertiary button in extra large size (48px height), disabled state. Features 8px corner radius, #cdd5df text/icon color, and DM Sans SemiBold 16px font.'
       }
     }
   }
@@ -417,7 +417,7 @@ export const AllVariantsDisabled: Story = {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
       <Button label="Primary Disabled" variant="primary" disabled={true} />
       <Button label="Secondary Disabled" variant="secondary" disabled={true} />
-      <Button label="Tertiary Disabled" variant="tertiary" disabled={true} />
+      <Button label="Button CTA" variant="tertiary" disabled={true} />
       <Button label="Ghost Disabled" variant="ghost" disabled={true} />
       <Button label="Link Disabled" variant="link" disabled={true} />
     </div>
