@@ -52,7 +52,7 @@ type Story = StoryObj<typeof meta>;
 // ═══════════════════════════════════════════════════════════════
 
 export const Primary: Story = {
-  name: '🔵 Primary - Default',
+  name: 'Primary - Default',
   args: {
     label: 'Primary Button',
     variant: 'primary',
@@ -68,7 +68,7 @@ export const Primary: Story = {
 };
 
 export const PrimarySmall: Story = {
-  name: '🔵 Primary - Small',
+  name: 'Primary - Small',
   args: {
     label: 'Small Primary',
     variant: 'primary',
@@ -84,7 +84,7 @@ export const PrimarySmall: Story = {
 };
 
 export const PrimaryLarge: Story = {
-  name: '🔵 Primary - Large',
+  name: 'Primary - Large',
   args: {
     label: 'Large Primary',
     variant: 'primary',
@@ -100,7 +100,7 @@ export const PrimaryLarge: Story = {
 };
 
 export const PrimaryExtraLarge: Story = {
-  name: '🔵 Primary - Extra Large',
+  name: 'Primary - Extra Large',
   args: {
     label: 'Extra Large Primary',
     variant: 'primary',
@@ -120,7 +120,7 @@ export const PrimaryExtraLarge: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const Secondary: Story = {
-  name: '⚪ Secondary - Default',
+  name: 'Secondary - Default',
   args: {
     label: 'Secondary Button',
     variant: 'secondary',
@@ -136,7 +136,7 @@ export const Secondary: Story = {
 };
 
 export const SecondaryLarge: Story = {
-  name: '⚪ Secondary - Large',
+  name: 'Secondary - Large',
   args: {
     label: 'Large Secondary',
     variant: 'secondary',
@@ -156,7 +156,7 @@ export const SecondaryLarge: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const Tertiary: Story = {
-  name: '⚫ Tertiary - Default',
+  name: 'Tertiary - Default',
   args: {
     label: 'Tertiary Button',
     variant: 'tertiary',
@@ -172,7 +172,7 @@ export const Tertiary: Story = {
 };
 
 export const TertiaryLarge: Story = {
-  name: '⚫ Tertiary - Large',
+  name: 'Tertiary - Large',
   args: {
     label: 'Large Tertiary',
     variant: 'tertiary',
@@ -192,7 +192,7 @@ export const TertiaryLarge: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const Ghost: Story = {
-  name: '👻 Ghost - Default',
+  name: 'Ghost - Default',
   args: {
     label: 'Ghost Button',
     variant: 'ghost',
@@ -208,7 +208,7 @@ export const Ghost: Story = {
 };
 
 export const GhostLarge: Story = {
-  name: '👻 Ghost - Large',
+  name: 'Ghost - Large',
   args: {
     label: 'Large Ghost',
     variant: 'ghost',
@@ -228,7 +228,7 @@ export const GhostLarge: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const Link: Story = {
-  name: '🔗 Link - Default',
+  name: 'Link - Default',
   args: {
     label: 'Link Button',
     variant: 'link',
@@ -244,7 +244,7 @@ export const Link: Story = {
 };
 
 export const LinkLarge: Story = {
-  name: '🔗 Link - Large',
+  name: 'Link - Large',
   args: {
     label: 'Large Link',
     variant: 'link',
@@ -264,7 +264,7 @@ export const LinkLarge: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const LoadingPrimary: Story = {
-  name: '⏳ Loading - Primary',
+  name: 'Loading - Primary',
   args: {
     label: 'Submit',
     variant: 'primary',
@@ -282,7 +282,7 @@ export const LoadingPrimary: Story = {
 };
 
 export const LoadingSecondary: Story = {
-  name: '⏳ Loading - Secondary',
+  name: 'Loading - Secondary',
   args: {
     label: 'Save',
     variant: 'secondary',
@@ -300,7 +300,7 @@ export const LoadingSecondary: Story = {
 };
 
 export const LoadingTertiary: Story = {
-  name: '⏳ Loading - Tertiary',
+  name: 'Loading - Tertiary',
   args: {
     label: 'Process',
     variant: 'tertiary',
@@ -318,7 +318,7 @@ export const LoadingTertiary: Story = {
 };
 
 export const LoadingGhost: Story = {
-  name: '⏳ Loading - Ghost',
+  name: 'Loading - Ghost',
   args: {
     label: 'Update',
     variant: 'ghost',
@@ -336,7 +336,7 @@ export const LoadingGhost: Story = {
 };
 
 export const LoadingLink: Story = {
-  name: '⏳ Loading - Link',
+  name: 'Loading - Link',
   args: {
     label: 'Sync',
     variant: 'link',
@@ -354,7 +354,7 @@ export const LoadingLink: Story = {
 };
 
 export const LoadingSmall: Story = {
-  name: '⏳ Loading - Small Size',
+  name: 'Loading - Small Size',
   args: {
     label: 'Submit',
     variant: 'primary',
@@ -372,7 +372,7 @@ export const LoadingSmall: Story = {
 };
 
 export const LoadingLarge: Story = {
-  name: '⏳ Loading - Large Size',
+  name: 'Loading - Large Size',
   args: {
     label: 'Submit',
     variant: 'primary',
@@ -390,7 +390,7 @@ export const LoadingLarge: Story = {
 };
 
 export const LoadingExtraLarge: Story = {
-  name: '⏳ Loading - Extra Large Size',
+  name: 'Loading - Extra Large Size',
   args: {
     label: 'Submit',
     variant: 'primary',
@@ -408,7 +408,7 @@ export const LoadingExtraLarge: Story = {
 };
 
 export const CustomLoadingText: Story = {
-  name: '⏳ Loading - Custom Text',
+  name: 'Loading - Custom Text',
   args: {
     label: 'Download',
     variant: 'primary',
@@ -430,7 +430,7 @@ export const CustomLoadingText: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const DisabledPrimary: Story = {
-  name: '🚫 Disabled - Primary',
+  name: 'Disabled - Primary',
   args: {
     label: 'Disabled Primary',
     variant: 'primary',
@@ -446,7 +446,7 @@ export const DisabledPrimary: Story = {
 };
 
 export const DisabledSecondary: Story = {
-  name: '🚫 Disabled - Secondary',
+  name: 'Disabled - Secondary',
   args: {
     label: 'Disabled Secondary',
     variant: 'secondary',
@@ -462,7 +462,7 @@ export const DisabledSecondary: Story = {
 };
 
 export const FullWidth: Story = {
-  name: '📏 Full Width',
+  name: 'Full Width',
   args: {
     label: 'Full Width Button',
     variant: 'primary',
@@ -479,7 +479,7 @@ export const FullWidth: Story = {
 };
 
 export const Interactive: Story = {
-  name: '🎯 Interactive Example',
+  name: 'Interactive Example',
   args: {
     label: 'Click Me!',
     variant: 'primary',
@@ -499,7 +499,7 @@ export const Interactive: Story = {
 // ═══════════════════════════════════════════════════════════════
 
 export const AllVariants: Story = {
-  name: '🎨 All Variants Showcase',
+  name: 'All Variants Showcase',
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
       <Button label="Primary Button" variant="primary" />
@@ -520,7 +520,7 @@ export const AllVariants: Story = {
 };
 
 export const AllSizes: Story = {
-  name: '📐 All Sizes Showcase',
+  name: 'All Sizes Showcase',
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
       <Button label="Small Button" variant="primary" size="sm" />
@@ -540,7 +540,7 @@ export const AllSizes: Story = {
 };
 
 export const LoadingStatesShowcase: Story = {
-  name: '⏳ Loading States Showcase',
+  name: 'Loading States Showcase',
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
       <Button label="Submit" variant="primary" loading={true} loadingText="Submitting..." />
