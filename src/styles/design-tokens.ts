@@ -41,7 +41,7 @@ export const colors = {
   link: {
     default: 'transparent',
     hover: 'transparent',
-    text: '#4b5565',
+    text: '#1570ef',
     border: 'transparent'
   },
   
