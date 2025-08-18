@@ -48,11 +48,18 @@ export const Button: React.FC<ButtonProps> = ({
     };
 
     if (disabled) {
+      // For tertiary and ghost variants, maintain transparent background even when disabled
+      const disabledBackground = (variant === 'tertiary' || variant === 'ghost' || variant === 'link') 
+        ? 'transparent' 
+        : colors.disabled.background;
+      
       return {
         ...baseStyles,
-        backgroundColor: colors.disabled.background,
+        backgroundColor: disabledBackground,
         color: colors.disabled.text,
-        borderColor: colors.disabled.border
+        borderColor: (variant === 'tertiary' || variant === 'ghost' || variant === 'link') 
+          ? 'transparent' 
+          : colors.disabled.border
       };
     }
 
