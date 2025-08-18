@@ -60,18 +60,6 @@ const preview: Preview = {
     // Global styles to ensure sans-serif fonts everywhere
     layout: 'centered',
   },
-  // Global decorators to ensure consistent typography
-  decorators: [
-    (Story) => (
-      <div style={{ 
-        fontFamily: '"DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-        WebkitFontSmoothing: 'antialiased',
-        MozOsxFontSmoothing: 'grayscale'
-      }}>
-        <Story />
-      </div>
-    ),
-  ],
 };
 
 export default preview;
