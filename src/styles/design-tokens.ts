@@ -108,6 +108,30 @@ export const spacing = {
     }
   },
   
+  // Icon-only Button Dimensions (based on Figma specs)
+  iconButton: {
+    sm: { 
+      width: '36px',
+      height: '36px',
+      padding: '8px'
+    },
+    md: { 
+      width: '40px',
+      height: '40px',
+      padding: '10px'
+    },
+    lg: { 
+      width: '44px',
+      height: '44px',
+      padding: '12px'
+    },
+    xl: { 
+      width: '48px',
+      height: '48px',
+      padding: '14px'
+    }
+  },
+  
   // General Spacing
   xs: '4px',
   sm: '8px',

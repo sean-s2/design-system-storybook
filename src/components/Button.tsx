@@ -3,7 +3,7 @@ import { colors, spacing, typography, borderRadius, shadows, transitions } from 
 import { LoadingSpinner } from './LoadingSpinner';
 
 export interface ButtonProps {
-  label: string;
+  label?: string;
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'tertiary' | 'ghost' | 'link';
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -11,6 +11,7 @@ export interface ButtonProps {
   loading?: boolean;
   loadingText?: string;
   fullWidth?: boolean;
+  iconOnly?: boolean;
   children?: React.ReactNode;
   style?: React.CSSProperties;
 }
@@ -24,6 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   loading = false,
   loadingText = 'Submitting...',
   fullWidth = false,
+  iconOnly = false,
   children,
   style,
   ...props
@@ -31,6 +33,9 @@ export const Button: React.FC<ButtonProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const getButtonStyles = () => {
+    // Use icon button dimensions if iconOnly, otherwise regular button dimensions
+    const dimensions = iconOnly ? spacing.iconButton[size] : spacing.button[size];
+    
     const baseStyles = {
       fontFamily: typography.fontFamily.primary,
       fontWeight: typography.fontWeight.semibold,
@@ -41,12 +46,12 @@ export const Button: React.FC<ButtonProps> = ({
       display: 'inline-flex',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: spacing.button[size].gap,
-      width: fullWidth ? '100%' : spacing.button[size].width,
-      height: spacing.button[size].height,
-      padding: spacing.button[size].padding,
-      fontSize: typography.button[size].fontSize,
-      lineHeight: typography.button[size].lineHeight,
+      gap: iconOnly ? '0' : spacing.button[size].gap,
+      width: fullWidth ? '100%' : dimensions.width,
+      height: dimensions.height,
+      padding: dimensions.padding,
+      fontSize: iconOnly ? '0' : typography.button[size].fontSize,
+      lineHeight: iconOnly ? '0' : typography.button[size].lineHeight,
       position: 'relative' as const,
       whiteSpace: 'nowrap' as const
     };
@@ -134,7 +139,7 @@ export const Button: React.FC<ButtonProps> = ({
         />
       )}
       {children}
-      {loading ? loadingText : label}
+      {!iconOnly && (loading ? loadingText : label)}
     </button>
   );
 };

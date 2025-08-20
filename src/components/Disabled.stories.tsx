@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import { CircleIcon } from './Icon';
 import { colors } from '../styles/design-tokens';
 
 const meta: Meta<typeof Button> = {
@@ -448,6 +449,277 @@ export const AllSizesDisabled: Story = {
     docs: {
       description: {
         story: 'A showcase of all button sizes in disabled state using primary variant for comparison.'
+      }
+    }
+  }
+};
+
+// Icon-only disabled variants
+export const PrimaryIconSmall: Story = {
+  name: 'Primary Icon - Small',
+  args: {
+    variant: 'primary',
+    size: 'sm',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in small size (36x36px), disabled state. Features disabled background (#f8fafc), border (#cdd5df), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const PrimaryIconMedium: Story = {
+  name: 'Primary Icon - Medium',
+  args: {
+    variant: 'primary',
+    size: 'md',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in medium size (40x40px), disabled state. Features disabled background (#f8fafc), border (#cdd5df), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const PrimaryIconLarge: Story = {
+  name: 'Primary Icon - Large',
+  args: {
+    variant: 'primary',
+    size: 'lg',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in large size (44x44px), disabled state. Features disabled background (#f8fafc), border (#cdd5df), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const PrimaryIconExtraLarge: Story = {
+  name: 'Primary Icon - Extra Large',
+  args: {
+    variant: 'primary',
+    size: 'xl',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in extra large size (48x48px), disabled state. Features disabled background (#f8fafc), border (#cdd5df), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const SecondaryIconSmall: Story = {
+  name: 'Secondary Icon - Small',
+  args: {
+    variant: 'secondary',
+    size: 'sm',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Secondary icon-only button in small size (36x36px), disabled state. Features disabled background (#f8fafc), border (#dde6f1), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const SecondaryIconMedium: Story = {
+  name: 'Secondary Icon - Medium',
+  args: {
+    variant: 'secondary',
+    size: 'md',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Secondary icon-only button in medium size (40x40px), disabled state. Features disabled background (#f8fafc), border (#dde6f1), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const SecondaryIconLarge: Story = {
+  name: 'Secondary Icon - Large',
+  args: {
+    variant: 'secondary',
+    size: 'lg',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Secondary icon-only button in large size (44x44px), disabled state. Features disabled background (#f8fafc), border (#dde6f1), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const SecondaryIconExtraLarge: Story = {
+  name: 'Secondary Icon - Extra Large',
+  args: {
+    variant: 'secondary',
+    size: 'xl',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Secondary icon-only button in extra large size (48x48px), disabled state. Features disabled background (#f8fafc), border (#dde6f1), and disabled icon color.'
+      }
+    }
+  }
+};
+
+export const TertiaryIconSmall: Story = {
+  name: 'Tertiary Icon - Small',
+  args: {
+    variant: 'tertiary',
+    size: 'sm',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Tertiary icon-only button in small size (36x36px), disabled state. Features transparent background and disabled icon color (#cdd5df).'
+      }
+    }
+  }
+};
+
+export const TertiaryIconMedium: Story = {
+  name: 'Tertiary Icon - Medium',
+  args: {
+    variant: 'tertiary',
+    size: 'md',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Tertiary icon-only button in medium size (40x40px), disabled state. Features transparent background and disabled icon color (#cdd5df).'
+      }
+    }
+  }
+};
+
+export const TertiaryIconLarge: Story = {
+  name: 'Tertiary Icon - Large',
+  args: {
+    variant: 'tertiary',
+    size: 'lg',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Tertiary icon-only button in large size (44x44px), disabled state. Features transparent background and disabled icon color (#cdd5df).'
+      }
+    }
+  }
+};
+
+export const TertiaryIconExtraLarge: Story = {
+  name: 'Tertiary Icon - Extra Large',
+  args: {
+    variant: 'tertiary',
+    size: 'xl',
+    disabled: true,
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Tertiary icon-only button in extra large size (48x48px), disabled state. Features transparent background and disabled icon color (#cdd5df).'
+      }
+    }
+  }
+};
+
+// Icon-only showcase stories
+export const AllIconVariantsDisabled: Story = {
+  name: 'All Icon Variants Disabled',
+  render: () => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <Button variant="primary" size="md" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+      <Button variant="secondary" size="md" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+      <Button variant="tertiary" size="md" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+    </div>
+  ),
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        story: 'A showcase of all icon-only button variants in disabled state: Primary, Secondary, and Tertiary.'
+      }
+    }
+  }
+};
+
+export const AllIconSizesDisabled: Story = {
+  name: 'All Icon Sizes Disabled',
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
+      <Button variant="primary" size="sm" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+      <Button variant="primary" size="md" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+      <Button variant="primary" size="lg" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+      <Button variant="primary" size="xl" disabled={true} iconOnly>
+        <CircleIcon size={20} />
+      </Button>
+    </div>
+  ),
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        story: 'A showcase of all icon-only button sizes in disabled state using primary variant: Small (36px), Medium (40px), Large (44px), Extra Large (48px).'
       }
     }
   }

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import { CircleIcon } from './Icon';
 import { colors, shadows } from '../styles/design-tokens';
 
 const meta: Meta<typeof Button> = {
@@ -273,6 +274,244 @@ export const AllSizesHover: Story = {
     docs: {
       description: {
         story: 'Showcase of all Primary button sizes in their hover states for visual consistency comparison.'
+      }
+    }
+  }
+};
+
+// Icon-only hover variants
+export const PrimaryIconSmall: Story = {
+  name: 'Primary Icon - Small (Hover)',
+  args: {
+    variant: 'primary',
+    size: 'sm',
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in small size (36x36px) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white icon, no elevation, and no micro-animation on hover.'
+      }
+    },
+    // Force hover state for demonstration
+    pseudo: { hover: true }
+  },
+  render: (args) => (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button 
+        {...args} 
+        style={{
+          backgroundColor: colors.primary.hover,
+        }}
+      />
+      <div style={{ 
+        marginTop: '8px', 
+        fontSize: '12px', 
+        color: colors.neutral.gray[500],
+        textAlign: 'center'
+      }}>
+        Hover (Primary Blue 600: {colors.primary.hover})
+      </div>
+    </div>
+  ),
+};
+
+export const PrimaryIconMedium: Story = {
+  name: 'Primary Icon - Medium (Hover)',
+  args: {
+    variant: 'primary',
+    size: 'md',
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in medium size (40x40px) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white icon, no elevation, and no micro-animation on hover.'
+      }
+    },
+    // Force hover state for demonstration
+    pseudo: { hover: true }
+  },
+  render: (args) => (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button 
+        {...args} 
+        style={{
+          backgroundColor: colors.primary.hover,
+        }}
+      />
+      <div style={{ 
+        marginTop: '8px', 
+        fontSize: '12px', 
+        color: colors.neutral.gray[500],
+        textAlign: 'center'
+      }}>
+        Hover (Primary Blue 600: {colors.primary.hover})
+      </div>
+    </div>
+  ),
+};
+
+export const PrimaryIconLarge: Story = {
+  name: 'Primary Icon - Large (Hover)',
+  args: {
+    variant: 'primary',
+    size: 'lg',
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in large size (44x44px) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white icon, no elevation, and no micro-animation on hover.'
+      }
+    },
+    // Force hover state for demonstration
+    pseudo: { hover: true }
+  },
+  render: (args) => (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button 
+        {...args} 
+        style={{
+          backgroundColor: colors.primary.hover,
+        }}
+      />
+      <div style={{ 
+        marginTop: '8px', 
+        fontSize: '12px', 
+        color: colors.neutral.gray[500],
+        textAlign: 'center'
+      }}>
+        Hover (Primary Blue 600: {colors.primary.hover})
+      </div>
+    </div>
+  ),
+};
+
+export const PrimaryIconExtraLarge: Story = {
+  name: 'Primary Icon - Extra Large (Hover)',
+  args: {
+    variant: 'primary',
+    size: 'xl',
+    iconOnly: true,
+    children: <CircleIcon size={20} />,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Primary icon-only button in extra large size (48x48px) showing hover state. Features darker blue background (Primary Blue 600: colors.primary.hover), white icon, no elevation, and no micro-animation on hover.'
+      }
+    },
+    // Force hover state for demonstration
+    pseudo: { hover: true }
+  },
+  render: (args) => (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button 
+        {...args} 
+        style={{
+          backgroundColor: colors.primary.hover,
+        }}
+      />
+      <div style={{ 
+        marginTop: '8px', 
+        fontSize: '12px', 
+        color: colors.neutral.gray[500],
+        textAlign: 'center'
+      }}>
+        Hover (Primary Blue 600: {colors.primary.hover})
+      </div>
+    </div>
+  ),
+};
+
+// Icon-only hover showcase
+export const AllIconSizesHover: Story = {
+  name: 'All Icon Sizes (Hover)',
+  render: () => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Button 
+          variant="primary" 
+          size="sm" 
+          iconOnly
+          style={{ backgroundColor: colors.primary.hover }}
+        >
+          <CircleIcon size={20} />
+        </Button>
+        <div style={{ 
+          marginTop: '4px', 
+          fontSize: '10px', 
+          color: colors.neutral.gray[500],
+          textAlign: 'center'
+        }}>
+          36px
+        </div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Button 
+          variant="primary" 
+          size="md" 
+          iconOnly
+          style={{ backgroundColor: colors.primary.hover }}
+        >
+          <CircleIcon size={20} />
+        </Button>
+        <div style={{ 
+          marginTop: '4px', 
+          fontSize: '10px', 
+          color: colors.neutral.gray[500],
+          textAlign: 'center'
+        }}>
+          40px
+        </div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Button 
+          variant="primary" 
+          size="lg" 
+          iconOnly
+          style={{ backgroundColor: colors.primary.hover }}
+        >
+          <CircleIcon size={20} />
+        </Button>
+        <div style={{ 
+          marginTop: '4px', 
+          fontSize: '10px', 
+          color: colors.neutral.gray[500],
+          textAlign: 'center'
+        }}>
+          44px
+        </div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Button 
+          variant="primary" 
+          size="xl" 
+          iconOnly
+          style={{ backgroundColor: colors.primary.hover }}
+        >
+          <CircleIcon size={20} />
+        </Button>
+        <div style={{ 
+          marginTop: '4px', 
+          fontSize: '10px', 
+          color: colors.neutral.gray[500],
+          textAlign: 'center'
+        }}>
+          48px
+        </div>
+      </div>
+    </div>
+  ),
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        story: 'Showcase of all Primary icon-only button sizes in their hover states for visual consistency comparison.'
       }
     }
   }
