@@ -23,35 +23,6 @@ Visit the live Storybook at: [https://sean-s2.github.io/design-system-storybook]
 - **Component Variants**: All button states and interactions
 - **Accessibility**: Proper focus states and ARIA support
 
-## 🛠 **Getting Started**
-
-### **Prerequisites**
-- [Bun](https://bun.sh/) (recommended) or Node.js
-- Git
-
-### **Installation**
-```bash
-git clone https://github.com/sean-s2/design-system-storybook.git
-cd design-system-storybook
-bun install
-```
-
-### **Development**
-```bash
-# Start Storybook locally
-bun run storybook
-
-# Build for production
-bun run build-storybook
-```
-
-### **Deployment**
-```bash
-# Deploy to GitHub Pages
-bun run deploy-storybook
-
-# Build and deploy
-bun run deploy-storybook:build
 ```
 
 ## 🎯 **Component Details**
@@ -124,93 +95,7 @@ bun run deploy-storybook:build
 bun run deploy-storybook
 ```
 
-## 🏗 **Project Structure**
 
-```
-design-system-storybook/
-├── .storybook/           # Storybook configuration
-│   ├── main.ts          # Main Storybook config
-│   └── preview.ts       # Preview configuration
-├── .github/workflows/    # GitHub Actions deployment
-│   └── deploy-storybook.yml
-├── src/
-│   ├── components/       # React components
-│   │   ├── Button.tsx   # Main button component
-│   │   ├── Button.stories.tsx
-│   │   ├── LoadingSpinner.tsx
-│   │   ├── LoadingDemo.tsx
-│   │   └── index.ts     # Component exports
-│   └── styles/          # Design tokens and CSS
-│       ├── design-tokens.ts
-│       └── globals.css
-├── package.json          # Dependencies and scripts
-├── tsconfig.json         # TypeScript configuration
-├── postcss.config.js     # PostCSS configuration
-└── README.md            # This file
-```
-
-## 🎯 **Storybook Stories**
-
-The repository includes comprehensive Storybook stories:
-
-- **Individual Variants**: Each button variant with different sizes
-- **Loading States**: All variants in loading state
-- **Size Showcases**: All sizes of primary buttons
-- **Interactive Demos**: Buttons with click handlers
-- **Layout Examples**: Full-width and grouped button layouts
-
-## 🔧 **Technical Details**
-
-### **Built With**
-- **Storybook**: Component development and documentation
-- **React**: UI component library
-- **TypeScript**: Type-safe development
-- **Tailwind CSS**: Utility-first CSS framework
-- **PostCSS**: CSS processing
-
-### **Development Tools**
-- **Bun**: Fast JavaScript runtime and package manager
-- **GitHub Actions**: Automated deployment pipeline
-- **GitHub Pages**: Live hosting
-
-## 🚀 **Quick Start Guide**
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sean-s2/design-system-storybook.git
-   cd design-system-storybook
-   ```
-
-2. **Install dependencies**
-   ```bash
-   bun install
-   ```
-
-3. **Start development**
-   ```bash
-   bun run storybook
-   ```
-
-4. **View locally**
-   Open http://localhost:6006 in your browser
-
-5. **Make changes**
-   Edit components in `src/components/`
-
-6. **Deploy changes**
-   ```bash
-   git add .
-   git commit -m "Update components"
-   git push origin main
-   ```
-
-## 🎯 **Next Steps**
-
-1. **Enable GitHub Pages** in repository settings
-2. **Customize Components** for your specific needs
-3. **Add More Components** to expand the design system
-4. **Share with Team** the live Storybook URL
-5. **Integrate Components** into your main applications
 
 ## 🤝 **Contributing**
 
@@ -225,13 +110,6 @@ The repository includes comprehensive Storybook stories:
 ## 📄 **License**
 
 This project is private and proprietary. All rights reserved.
-
-## 🙏 **Acknowledgments**
-
-- **Figma Design**: Components extracted from your Figma design system
-- **Storybook**: Amazing tool for component development
-- **React Team**: Excellent component library
-- **Design System Community**: Best practices and inspiration
 
 ---
 
